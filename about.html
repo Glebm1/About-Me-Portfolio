@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе | Глеб Малашевский</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="avatar-container">
+                <div class="avatar-frame">
+                    <img src="img/Avatar.png" alt="Фото Глеба" class="avatar">
+                </div>
+                <div class="avatar-decoration"></div>
+            </div>
+            <div class="header-text">
+                <h1 class="main-title">Arbuzi</h1>
+                <p class="subtitle">Разработчик и дизайнер</p>
+                <div class="tagline">
+                    <i class="fas fa-code"></i>
+                    <span>Пытаюсь учиться и понимать что-то новое</span>
+                </div>
+            </div>
+            <div class="header-icons">
+                <a href="mailto:gleb06092005@gmail.com" class="icon-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Glebm1" target="_blank" class="icon-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/Nomerarbuzi" target="_blank" class="icon-link" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О себе</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li class="theme-toggle-li">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Сменить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h2 class="page-title">О себе</h2>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Краткая биография -->
+                <section class="content-card about-bio">
+                    <div class="card-header">
+                        <i class="fas fa-user card-icon"></i>
+                        <h2>Краткая биография</h2>
+                    </div>
+                    <div class="bio-content">
+                        <p>
+                            <strong>Имя:</strong> Глеб Малашевский
+                        </p>
+                        <p>
+                            <strong>Город:</strong> Павлодар, Казахстан
+                        </p>
+                        <p>
+                            <strong>Университет:</strong> Торайгыров университет
+                        </p>
+                        <p>
+                            <strong>Специальность:</strong> Computer Science
+                        </p>
+                        <p class="bio-description">
+                            Приветствую! Меня зовут Глеб. Я учусь на программиста и постоянно развиваюсь в сфере IT. 
+                            Много чего еще не знаю, но мне нравится учиться новому и применять знания на практике.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Интересы (без иконок) -->
+                <section class="content-card about-interests">
+                    <div class="card-header">
+                        <i class="fas fa-heart card-icon"></i>
+                        <h2>Интересы</h2>
+                    </div>
+                    <p class="section-intro">Мои интересы связаны с технологиями и творчеством:</p>
+                    <div class="interests-simple">
+                        <div class="interest-simple-item">
+                            <h3>Веб-разработка</h3>
+                            <p>Создание современных и отзывчивых веб-приложений</p>
+                        </div>
+                        
+                        <div class="interest-simple-item">
+                            <h3>Дизайн интерфейсов</h3>
+                            <p>UI/UX дизайн для удобных и красивых продуктов</p>
+                        </div>
+                        
+                        <div class="interest-simple-item">
+                            <h3>Создание игр на C#</h3>
+                            <p>Разработка игровых проектов в качестве хобби</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Хобби (без иконок, только музыка, спорт, технологии) -->
+                <section class="content-card about-hobbies">
+                    <div class="card-header">
+                        <i class="fas fa-camera card-icon"></i>
+                        <h2>Хобби</h2>
+                    </div>
+                    <p class="section-intro">Чем я увлекаюсь кроме программирования:</p>
+                    <div class="hobbies-simple">
+                        <div class="hobby-simple-item">Музыка</div>
+                        <div class="hobby-simple-item">Спорт</div>
+                        <div class="hobby-simple-item">Технологии</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-icon">G</div>
+                <div class="logo-text">
+                    <span class="logo-name">Arbuzi</span>
+                    <span class="logo-tagline">Разработчик и дизайнер</span>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Arbuzi. Все права защищены</p>
+            <div class="footer-links">
+                <a href="mailto:gleb06092005@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Glebm1" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/Nomerarbuzi" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

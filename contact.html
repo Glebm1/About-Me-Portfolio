@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Глеб Малашевский</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="avatar-container">
+                <div class="avatar-frame">
+                    <img src="img/Avatar.png" alt="Фото Глеба" class="avatar">
+                </div>
+                <div class="avatar-decoration"></div>
+            </div>
+            <div class="header-text">
+                <h1 class="main-title">Arbuzi</h1>
+                <p class="subtitle">Разработчик и дизайнер</p>
+                <div class="tagline">
+                    <i class="fas fa-code"></i>
+                    <span>Пытаюсь учиться и понимать что-то новое</span>
+                </div>
+            </div>
+            <div class="header-icons">
+                <a href="mailto:gleb06092005@gmail.com" class="icon-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Glebm1" target="_blank" class="icon-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/Nomerarbuzi" target="_blank" class="icon-link" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+                <li class="theme-toggle-li">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Сменить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h2 class="page-title">Контакты</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Форма обратной связи -->
+                <section class="content-card contact-form-card">
+                    <div class="card-header">
+                        <i class="fas fa-envelope card-icon"></i>
+                        <h2>Напишите мне</h2>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Ваше имя
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Ваш email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Сообщение
+                            </label>
+                            <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Контактная информация -->
+                <section class="content-card contact-info-card">
+                    <div class="card-header">
+                        <i class="fas fa-address-card card-icon"></i>
+                        <h2>Контактная информация</h2>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:gleb06092005@gmail.com">gleb06092005@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/Glebm1" target="_blank">github.com/Glebm1</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telegram</h3>
+                                <a href="https://t.me/Nomerarbuzi" target="_blank">t.me/Nomerarbuzi</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-icon">G</div>
+                <div class="logo-text">
+                    <span class="logo-name">Arbuzi</span>
+                    <span class="logo-tagline">Разработчик и дизайнер</span>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Arbuzi. Все права защищены</p>
+            <div class="footer-links">
+                <a href="mailto:gleb06092005@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Glebm1" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/Nomerarbuzi" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+<!-- Success Message -->
+<div id="success-message" class="success-message">
+    <i class="fas fa-check-circle"></i>
+    <span>Ваше сообщение отправлено!</span>
+</div>
+
+<script>
+    // Обработка отправки формы обратной связи
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(event) {
+                event.preventDefault();
+                
+                // Получаем данные формы
+                const formData = new FormData(contactForm);
+                
+                // Добавляем ключ доступа Web3Forms
+                formData.append('access_key', 'b2b2f75e-8698-4fd6-822d-8b78adea8086');
+                
+                // Добавляем email получателя (куда придет письмо)
+                formData.append('to', 'gleb06092005@gmail.com');
+                
+                // Настраиваем отправителя
+                formData.append('from_name', 'Arbuzi Portfolio');
+                
+                // Создаем и показываем сообщение об отправке
+                const submitBtn = contactForm.querySelector('.submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+                submitBtn.disabled = true;
+                
+                try {
+                    // Отправляем данные на Web3Forms
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        // Показываем сообщение об успехе
+                        showSuccessMessage();
+                        
+                        // Очищаем форму
+                        contactForm.reset();
+                    } else {
+                        alert('Ошибка при отправке. Пожалуйста, попробуйте еще раз.');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Произошла ошибка. Проверьте подключение к интернету и попробуйте снова.');
+                } finally {
+                    // Возвращаем кнопку в исходное состояние
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            });
+        }
+        
+        // Функция показа сообщения об успехе
+        function showSuccessMessage() {
+            const successMsg = document.getElementById('success-message');
+            if (successMsg) {
+                successMsg.classList.add('show');
+                
+                setTimeout(() => {
+                    successMsg.classList.remove('show');
+                }, 3000);
+            }
+        }
+    });
+</script>
+</html>

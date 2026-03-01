@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты | Глеб Малашевский</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="avatar-container">
+                <div class="avatar-frame">
+                    <img src="img/Avatar.png" alt="Фото Глеба" class="avatar">
+                </div>
+                <div class="avatar-decoration"></div>
+            </div>
+            <div class="header-text">
+                <h1 class="main-title">Arbuzi</h1>
+                <p class="subtitle">Разработчик и дизайнер</p>
+                <div class="tagline">
+                    <i class="fas fa-code"></i>
+                    <span>Пытаюсь учиться и понимать что-то новое</span>
+                </div>
+            </div>
+            <div class="header-icons">
+                <a href="mailto:gleb06092005@gmail.com" class="icon-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Glebm1" target="_blank" class="icon-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/Nomerarbuzi" target="_blank" class="icon-link" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="projects.html" class="active">Проекты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li class="theme-toggle-li">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Сменить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h2 class="page-title">Мои проекты</h2>
+            </div>
+            
+            <!-- Список проектов -->
+            <section class="projects-section">
+                <div class="projects-grid">
+                    <!-- Проект: Сайт для ПМЗ -->
+                    <div class="project-card-full">
+                        <div class="project-image">
+                            <img src="img/Primer.png" alt="Скриншот сайта ПМЗ">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Сайт для ПМЗ (Павлодарский машиностроительный завод)</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Адаптивная верстка</span>
+                            </div>
+                            <p class="project-description">
+                                Информационный сайт для ознакомления с деятельностью Павлодарского машиностроительного завода. 
+                                На сайте представлена информация о предприятии, его продукции и услугах. Реализована адаптивная верстка 
+                                для комфортного просмотра на всех устройствах.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://glebm1.github.io/ergmash.kz/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Посмотреть проект</span>
+                                </a>
+                                <a href="https://github.com/Glebm1/ergmash.kz" target="_blank" class="project-link github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Репозиторий</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-icon">G</div>
+                <div class="logo-text">
+                    <span class="logo-name">Arbuzi</span>
+                    <span class="logo-tagline">Разработчик и дизайнер</span>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Arbuzi. Все права защищены</p>
+            <div class="footer-links">
+                <a href="mailto:gleb06092005@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Glebm1" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/Nomerarbuzi" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
